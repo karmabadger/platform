@@ -21,6 +21,10 @@ export const WalletContext = React.createContext(
 // Usage: Do this to get the current account in any component
 
 import { useContext } from 'react';
-const { walletConnection } = useContext(WalletContext);
-console.log(walletConnection.account); // string like 0x1c7c0aa3255af235c6e80621533ce74e4fbbdb3d
+import { WalletContext } from 'contexts/WalletContext';
+
+export const MyComponent: React.FunctionComponent = () => {
+  const { walletConnection } = useContext(WalletContext);
+  console.log(walletConnection.account); // string like 0x1c7c0aa3255af235c6e80621533ce74e4fbbdb3d
+};
 */

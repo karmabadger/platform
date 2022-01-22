@@ -7,6 +7,7 @@ import Dashboard from '../pages/Dashboard';
 import MyContracts from '../pages/MyContracts';
 import SingleContract from '../pages/SingleContract';
 import { CreateContract } from '../pages/CreateContract';
+import { TestContractInteraction } from '../pages/TestContractInteraction';
 
 interface IContent {
   reportSidebarOpen: (e: boolean) => void;
@@ -48,6 +49,9 @@ const Content = (props: IContent) => {
                 </Route>
                 <Route path={SectionPath.createContract} exact>
                   <CreateContract />
+                </Route>
+                <Route path={SectionPath.testContractInteraction} exact>
+                  <TestContractInteraction />
                 </Route>
               </Switch>
             </div>

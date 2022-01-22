@@ -4,6 +4,7 @@ import {
   ClipboardIcon,
   HomeIcon,
   UserGroupIcon,
+  CodeIcon,
 } from '@heroicons/react/outline';
 import Sidebar from '../components/Sidebar';
 import Content from '../components/Content';
@@ -49,6 +50,12 @@ export default function Admin() {
       href: SectionPath.community,
       icon: UserGroupIcon,
       current: current(SectionPath.community),
+    },
+    {
+      name: 'Test Contract Interaction',
+      href: SectionPath.testContractInteraction,
+      icon: CodeIcon,
+      current: current(SectionPath.testContractInteraction),
     },
   ];
 
